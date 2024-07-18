@@ -1,0 +1,54 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+.u-l{
+    display: flex;
+    list-style: none;
+    gap: 20px;
+  }
+  a{
+    text-decoration: none;
+    color: white;
+}
+  .nav{
+    justify-content: end;
+    align-items: center;
+    background-color: #d90429;
+    grid-area: n;
+    text-align: center;
+  }
+  .main{
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 70px ;
+    grid-template-areas: 
+    "n"
+    "h"
+    "b"
+    "f";
+  }
+  header{
+    grid-area: h;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background-color: antiquewhite;
+  }
+  .tb{
+    border: 2px solid black;
+    height: 430px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  form{
+    width: 900px;
+    height: 300px;
+  }
+
+footer{
+    grid-area: f;
+    background-color: cadetblue;
+    text-align: center;
+}

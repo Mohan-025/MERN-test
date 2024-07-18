@@ -1,0 +1,84 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+.b-con{
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    grid-template-rows: 60px 200px 1fr 1fr;
+    grid-template-areas: 
+    "n n n n"
+    "a a a a"
+    "i1 i i i2"
+    "m m m m "
+    "f f f f";
+}
+.u-l{
+    display: flex;
+    list-style: none;
+    gap: 30px;
+    margin-right: 5px;
+    margin-top: 5px;
+}
+a{
+    text-decoration: none;
+    color: white;
+}
+.nav{
+    justify-content: end;
+    align-items: center;
+    background-color: #d90429;
+    grid-area: n;
+    text-align: center;
+}
+header{
+    grid-area: a;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background-color: antiquewhite;
+}
+.hd{
+    margin-top: 20px;
+}
+#img1{
+    grid-area: i1;
+    display: flex;
+    margin-top: 10px;
+    justify-content: center;
+    align-items: center;
+}
+#img2{
+    grid-area: i2;
+    display: flex;
+    margin-top: 10px;
+    justify-content: center;
+    align-items: center;
+}
+.m-con{
+    justify-content: center;
+    align-items: center;
+    grid-area: a;
+}
+
+.b-info{
+    grid-area: i;
+    margin-top: 30px;
+}
+#mi{
+    width: 200px;
+    height: 200px;
+}
+.m-img{
+    display: flex;
+    grid-area: m;
+    align-items: center;
+    justify-content: space-between;
+    text-align: center;
+    padding: 10px;
+}
+footer{
+    grid-area: f;
+    background-color: cadetblue;
+    text-align: center;
+}

@@ -1,0 +1,107 @@
+*{
+  margin: 0;
+  padding: 0;
+}
+.u-l{
+  display: flex;
+  list-style: none;
+  gap: 20px;
+}
+a{
+  text-decoration: none;
+  color: white;
+}
+.nav{
+  justify-content: end;
+  align-items: center;
+  background-color: #d90429;
+  grid-area: n;
+  text-align: center;
+}
+.nav-con{
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 70px;
+  grid-template-areas: 
+  "n"
+  "h"
+  "b"
+  "f";
+}
+header{
+  grid-area: h;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  background-color: antiquewhite;
+}
+.con{
+  display: flex;
+  grid-area: b;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding-top:2%;
+}
+.form {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+    background-color: white;
+    padding: 15px;
+    width: 500px;
+    height: 500px;
+    border-radius: 7px;
+    border: 2px solid black;
+  }
+.form-title {
+    font-size: 20px;
+    text-align: center;
+    color: black;
+  }
+  
+  .in-con {
+    position: relative;
+  }
+  
+  .in-con input {
+    outline: none;
+    border: 1px solid black;
+    margin: 8px;
+  }
+
+  
+  .in-con input {
+    background-color: white;
+    padding: 15px;
+    width: 300px;
+    border-radius: 5px;
+  }
+  
+  .submit {
+    display: flex;
+    padding-top: 5px;
+    padding-bottom: 8px;
+    padding-left: 90px;
+    background-color: #d90429;
+    color: white;
+    width: 50%;
+    border-radius: 10px;
+  }
+  
+  .signup{
+    color: #6B7280;
+    text-align: center;
+  }
+  
+  .signup a {
+    text-decoration: underline;
+  }
+  footer{
+    margin-top: 10px;
+    grid-area: f;
+    background-color: cadetblue;
+    text-align: center;
+}
